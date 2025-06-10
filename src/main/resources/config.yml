@@ -1,0 +1,8 @@
+protected-players: []
+modules:
+  fly: true
+  speed: true
+  killaura: true
+  autoclicker: true
+  nofall: true
+exemptions: {}

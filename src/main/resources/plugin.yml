@@ -1,0 +1,40 @@
+name: mc_anticheat
+main: com.anticheat.McAntiCheat
+version: 1.0
+api-version: '1.20'
+author: Codex
+commands:
+  protect:
+    description: Protect a player from bans and kicks
+    usage: /protect <player>
+  unprotect:
+    description: Remove protection from a player
+    usage: /unprotect <player>
+  anticheat:
+    description: Main command for mc_anticheat
+    usage: /anticheat <toggle|allow|deny|status>
+permissions:
+  mc_anticheat.exempt:
+    description: Exempt from all anticheat actions
+    default: false
+  mc_anticheat.admin:
+    description: Admin permission for managing the plugin
+    default: op
+  mc_anticheat.allowfly:
+    description: Allow flight
+    default: false
+  mc_anticheat.bypass.fly:
+    description: Bypass fly checks
+    default: false
+  mc_anticheat.bypass.speed:
+    description: Bypass speed checks
+    default: false
+  mc_anticheat.bypass.killaura:
+    description: Bypass killaura checks
+    default: false
+  mc_anticheat.bypass.autoclicker:
+    description: Bypass autoclicker checks
+    default: false
+  mc_anticheat.bypass.nofall:
+    description: Bypass nofall checks
+    default: false
