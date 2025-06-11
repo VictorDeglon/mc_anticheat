@@ -36,7 +36,7 @@ public class FlySpeedListener implements Listener {
             double distance = event.getFrom().distance(event.getTo());
             if (distance > maxSpeed) {
                 event.setTo(event.getFrom());
-                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 40, 1, true, false, false));
+                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 40, 1, true, false, false));
                 plugin.logViolation(player, "speed");
             }
         }
